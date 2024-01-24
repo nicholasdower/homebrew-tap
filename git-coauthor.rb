@@ -8,7 +8,7 @@ class GitCoauthor < Formula
   def install
     lib.install Dir["lib/*"]
     bin.install "bin/git-coauthor"
-    system 'git config --global alias.coauthor '!git-coauthor''
+    system 'git config --global alias.coauthor \'!git-coauthor\''
   end
 
   test do
