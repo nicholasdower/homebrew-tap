@@ -27,4 +27,3 @@ class GitCoauthor < Formula
     EOS
   end
 end
-
