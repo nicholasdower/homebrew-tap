@@ -1,24 +1,27 @@
-# Homebrew Formulas
+# Homebrew Tap
 
-Homebrew formulas for:
+## Formulas
 
 https://github.com/nicholasdower/git-coauthor
 
-# Usage
+## Usage
 
 ```shell
-# Add tap
-brew tap nicholasdower/formulas
+# Add tap and install
+brew install nicholasdower/tap/<formula>
 
-# Install
-brew install git-coauthor
-
-# Uninstall
-brew uninstall git-coauthor
-
-# Remove tap
-brew untap nicholasdower/formulas
+# Add tap without installing
+brew tap nicholasdower/tap
 
 # List formulas in tap
-brew tap-info nicholasdower/formulas
+brew tap-info nicholasdower/tap
+
+# Install formula
+brew install <formula>
+
+# Uninstall formula
+brew uninstall <formula>
+
+# Remove tap
+brew untap nicholasdower/tap
 ```
