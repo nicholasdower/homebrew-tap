@@ -3,6 +3,7 @@
 ## Formulas
 
 https://github.com/nicholasdower/git-coauthor
+https://github.com/nicholasdower/joyn
 
 ## Usage
 
