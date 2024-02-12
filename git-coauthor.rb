@@ -1,16 +1,16 @@
-class GitCoauthor < Formula
-  desc "List or add Git coauthors"
-  homepage "https://github.com/nicholasdower/git-coauthor"
-  url "https://github.com/nicholasdower/git-coauthor/releases/download/v2.0.0/release.tar.gz"
-  sha256 "e8f76cd20ff0dd68d9c3365a6a59222d412ce140a010de5e99b641c8d13fd0cf"
+class Joyn < Formula
+  desc "Join lines"
+  homepage "https://github.com/nicholasdower/joyn"
+  url "https://github.com/nicholasdower/joyn/releases/download/v1.0.0/release.tar.gz"
+  sha256 "bba1fc4cf3d7e44e5346f72ed2e0b5d9f7d2d8c7016b22ea69dc95f2b9ac2065"
   license "MIT"
 
   def install
-    bin.install "bin/git-coauthor"
-    man1.install "man/git-coauthor.1"
+    bin.install "bin/joyn"
+    man1.install "man/joyn.1"
   end
 
   test do
-    assert_match "git-coauthor", shell_output("#{bin}/git-coauthor --version")
+    assert_match "joyn", shell_output("#{bin}/joyn --version")
   end
 end
