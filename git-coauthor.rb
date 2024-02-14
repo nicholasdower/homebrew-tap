@@ -5,10 +5,10 @@ class GitCoauthor < Formula
   version "5.1.0"
   if Hardware::CPU.arm?
     url "https://github.com/nicholasdower/git-coauthor/releases/download/v5.1.0/git-coauthor-5.1.0-aarch64-apple-darwin.tar.gz"
-    sha256 "5af796a69c427eb58adc35967017c02d44ce79016c6655c7438d80870e69f5f1"
+    sha256 "33c71c5972ed55dac1d09b0e3cb75e68120f63236011403542529f69aee4f25e"
   elsif Hardware::CPU.intel?
     url "https://github.com/nicholasdower/git-coauthor/releases/download/v5.1.0/git-coauthor-5.1.0-x86_64-apple-darwin.tar.gz"
-    sha256 "5af796a69c427eb58adc35967017c02d44ce79016c6655c7438d80870e69f5f1"
+    sha256 "03f267eca91b602cbd8830402ec094d5d75bcceec95e4646f87a522261eced94"
   end
 
   def install
