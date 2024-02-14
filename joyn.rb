@@ -1,9 +1,15 @@
 class Joyn < Formula
   desc "Join lines"
   homepage "https://github.com/nicholasdower/joyn"
-  url "https://github.com/nicholasdower/joyn/releases/download/v1.0.0/release.tar.gz"
-  sha256 "71a0f5123b5dd0afb6b3af461a16bce89207cd38753aec3815d4501c6c1cd8d5"
   license "MIT"
+  version "1.1.0"
+  if Hardware::CPU.arm?
+    url "https://github.com/nicholasdower/joyn/releases/download/v1.1.0/joyn-1.1.0-aarch64-apple-darwin.tar.gz"
+    sha256 "2872a3708157fc60bb6f2765626abe6d6f1ffeede242e5d73d3c3478a1bdc3fc"
+  elsif Hardware::CPU.intel?
+    url "https://github.com/nicholasdower/joyn/releases/download/v1.1.0/joyn-1.1.0-x86_64-apple-darwin.tar.gz"
+    sha256 "b1d34c12612bbced58ed515891d44025402776f45d03a525b4791f591cae1293"
+  end
 
   def install
     bin.install "bin/joyn"
