@@ -2,13 +2,13 @@ class GitCoauthor < Formula
   desc "List or add Git coauthors"
   homepage "https://github.com/nicholasdower/git-coauthor"
   license "MIT"
-  version "5.0.0"
+  version "5.1.0"
   if Hardware::CPU.arm?
-    url "https://github.com/nicholasdower/git-coauthor/releases/download/v5.0.0/git-coauthor-5.0.0-arm_64.tar.gz"
-    sha256 "3d1bbe095867772229d3011b97db716c82d98312fd74f959fcb1df307718bc95"
+    url "https://github.com/nicholasdower/git-coauthor/releases/download/v5.1.0/git-coauthor-5.1.0-aarch64-apple-darwin.tar.gz"
+    sha256 "5af796a69c427eb58adc35967017c02d44ce79016c6655c7438d80870e69f5f1"
   elsif Hardware::CPU.intel?
-    url "https://github.com/nicholasdower/git-coauthor/releases/download/v5.0.0/git-coauthor-5.0.0-x86_64.tar.gz"
-    sha256 "609722d7ff7f77a9861a31a2ec9c1e29facf471f973e6f7ac64d4758d3969f16"
+    url "https://github.com/nicholasdower/git-coauthor/releases/download/v5.1.0/git-coauthor-5.1.0-x86_64-apple-darwin.tar.gz"
+    sha256 "5af796a69c427eb58adc35967017c02d44ce79016c6655c7438d80870e69f5f1"
   end
 
   def install
