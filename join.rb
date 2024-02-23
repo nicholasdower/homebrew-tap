@@ -27,11 +27,11 @@ class Join < Formula
 
   def caveats
     puts <<~MSG
-      join has been installed but may not be first on your /snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin.
+      join has been installed but may not be first on your $PATH.
 
       Consider adding the following to your bashrc:
 
-          export PATH="#{prefix}/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+          export PATH="#{prefix}/bin:$PATH"
 
     MSG
   end
