@@ -2,20 +2,20 @@ class Join < Formula
   desc "Join lines"
   homepage "https://github.com/nicholasdower/join"
   license "MIT"
-  version "2.0.0"
+  version "3.0.0"
 
-  url "https://github.com/nicholasdower/join/releases/download/v2.0.0/join-2.0.0.tar.gz"
-  sha256 "150274f856f8f41ce6b4277f5bde4142d6ab0cd3665fd9bd224f717d499dc7ff"
+  url "https://github.com/nicholasdower/join/releases/download/v3.0.0/join-3.0.0.tar.gz"
+  sha256 "b00e9176a4417c0c9dd72f3f5d4a2f6dd75e00bab7a4673441e94917c6195478"
 
   bottle do
     rebuild 1
-    root_url "https://github.com/nicholasdower/join/releases/download/v2.0.0/"
-    sha256 cellar: :any, monterey: "6e5742f91cc05d9bed48b7b5adef0db40b37f8ea7f263d77963d428d1b6da0fc"
-    sha256 cellar: :any, ventura: "6e5742f91cc05d9bed48b7b5adef0db40b37f8ea7f263d77963d428d1b6da0fc"
-    sha256 cellar: :any, sonoma: "6e5742f91cc05d9bed48b7b5adef0db40b37f8ea7f263d77963d428d1b6da0fc"
-    sha256 cellar: :any, arm64_sonoma: "4834092ec80a51fd75eb5d2f8a68033399deaa67f2d396d7ff38fa6f0385e7f1"
-    sha256 cellar: :any, arm64_monterey: "4834092ec80a51fd75eb5d2f8a68033399deaa67f2d396d7ff38fa6f0385e7f1"
-    sha256 cellar: :any, arm64_ventura: "4834092ec80a51fd75eb5d2f8a68033399deaa67f2d396d7ff38fa6f0385e7f1"
+    root_url "https://github.com/nicholasdower/join/releases/download/v3.0.0/"
+    sha256 cellar: :any, monterey: "b605704151b3b945980cac03274159b5c4dac14cc9aed3ad1026b65a025d0869"
+    sha256 cellar: :any, ventura: "b605704151b3b945980cac03274159b5c4dac14cc9aed3ad1026b65a025d0869"
+    sha256 cellar: :any, sonoma: "b605704151b3b945980cac03274159b5c4dac14cc9aed3ad1026b65a025d0869"
+    sha256 cellar: :any, arm64_sonoma: "7408a86d82718420e93dab8be5859528a1a76691e84d150715dfe6a1adc51da3"
+    sha256 cellar: :any, arm64_monterey: "7408a86d82718420e93dab8be5859528a1a76691e84d150715dfe6a1adc51da3"
+    sha256 cellar: :any, arm64_ventura: "7408a86d82718420e93dab8be5859528a1a76691e84d150715dfe6a1adc51da3"
   end
 
   depends_on "rust" => :build
@@ -27,11 +27,11 @@ class Join < Formula
 
   def caveats
     puts <<~MSG
-      join has been installed but may not be first on your $PATH.
+      join has been installed but may not be first on your /snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin.
 
       Consider adding the following to your bashrc:
 
-          export PATH="#{prefix}/bin:$PATH"
+          export PATH="#{prefix}/bin:/snap/bin:/home/runner/.local/bin:/opt/pipx_bin:/home/runner/.cargo/bin:/home/runner/.config/composer/vendor/bin:/usr/local/.ghcup/bin:/home/runner/.dotnet/tools:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 
     MSG
   end
