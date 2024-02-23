@@ -25,6 +25,17 @@ class Join < Formula
     man1.install "man/join.1"
   end
 
+  def caveats
+    puts <<~MSG
+      join has been installed but may not be first on your $PATH.
+
+      Consider adding the following to your bashrc:
+
+          export PATH="#{prefix}/bin:$PATH"
+
+    MSG
+  end
+
   test do
     assert_match "join", shell_output("#{bin}/join --version")
   end
