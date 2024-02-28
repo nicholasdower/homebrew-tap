@@ -2,20 +2,20 @@ class Awake < Formula
   desc "Keep your Mac awake"
   homepage "https://github.com/nicholasdower/awake"
   license "MIT"
-  version "2.0.1"
+  version "2.1.0"
 
-  url "https://github.com/nicholasdower/awake/releases/download/v2.0.1/awake-2.0.1.tar.gz"
-  sha256 "c9a29565f8efaefb5541d7f48b3a9df4db4cda8fd5e4d3de65a2c13e1a9923aa"
+  url "https://github.com/nicholasdower/awake/releases/download/v2.1.0/awake-2.1.0.tar.gz"
+  sha256 "7e71a2ef7f1225265f011838e26cad33cd5714c0da65c8a457380e64527a74d6"
 
   bottle do
     rebuild 1
-    root_url "https://github.com/nicholasdower/awake/releases/download/v2.0.1/"
-    sha256 cellar: :any, monterey: "9fd07830152664f6b07747241021939b8eb639abb56c5f4c058a65fd9f17dbcf"
-    sha256 cellar: :any, ventura: "9fd07830152664f6b07747241021939b8eb639abb56c5f4c058a65fd9f17dbcf"
-    sha256 cellar: :any, sonoma: "9fd07830152664f6b07747241021939b8eb639abb56c5f4c058a65fd9f17dbcf"
-    sha256 cellar: :any, arm64_sonoma: "0d87b02811f7c4db3a25c78fd40a65df6a7ece08dbe249ddaf1640c9d09116ac"
-    sha256 cellar: :any, arm64_monterey: "0d87b02811f7c4db3a25c78fd40a65df6a7ece08dbe249ddaf1640c9d09116ac"
-    sha256 cellar: :any, arm64_ventura: "0d87b02811f7c4db3a25c78fd40a65df6a7ece08dbe249ddaf1640c9d09116ac"
+    root_url "https://github.com/nicholasdower/awake/releases/download/v2.1.0/"
+    sha256 cellar: :any, monterey: "ed35cfc52dccdfc69a6893bdbbc64b7636b472abccce69d6ee408bc12d3157a9"
+    sha256 cellar: :any, ventura: "ed35cfc52dccdfc69a6893bdbbc64b7636b472abccce69d6ee408bc12d3157a9"
+    sha256 cellar: :any, sonoma: "ed35cfc52dccdfc69a6893bdbbc64b7636b472abccce69d6ee408bc12d3157a9"
+    sha256 cellar: :any, arm64_sonoma: "8d2aa13b7e4f227e44e1f3043cb972e479fa044551258043275d714620d786bc"
+    sha256 cellar: :any, arm64_monterey: "8d2aa13b7e4f227e44e1f3043cb972e479fa044551258043275d714620d786bc"
+    sha256 cellar: :any, arm64_ventura: "8d2aa13b7e4f227e44e1f3043cb972e479fa044551258043275d714620d786bc"
   end
 
   depends_on "rust" => :build
